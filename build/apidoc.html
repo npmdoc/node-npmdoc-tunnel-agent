@@ -1,0 +1,383 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/mikeal/tunnel-agent#readme"
+
+    >tunnel-agent (v0.6.0)</a>
+</h1>
+<h4>HTTP proxy tunneling agent. Formerly part of mikeal/request, now a standalone module.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent">module tunnel-agent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.debug">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>debug
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpOverHttp">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttp
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpOverHttps">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttps
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpsOverHttp">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttp
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpsOverHttps">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttps
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent.debug">module tunnel-agent.debug</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.debug.debug">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>debug
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent.httpOverHttp">module tunnel-agent.httpOverHttp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpOverHttp.httpOverHttp">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttp
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent.httpOverHttps">module tunnel-agent.httpOverHttps</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpOverHttps.httpOverHttps">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttps
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent.httpsOverHttp">module tunnel-agent.httpsOverHttp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpsOverHttp.httpsOverHttp">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttp
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tunnel-agent.httpsOverHttps">module tunnel-agent.httpsOverHttps</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tunnel-agent.httpsOverHttps.httpsOverHttps">
+            function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttps
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent" id="apidoc.module.tunnel-agent">module tunnel-agent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.debug" id="apidoc.element.tunnel-agent.debug">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>debug
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpOverHttp" id="apidoc.element.tunnel-agent.httpOverHttp">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttp
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpOverHttp(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = http.request
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpOverHttps" id="apidoc.element.tunnel-agent.httpOverHttps">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttps
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpOverHttps(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = https.request
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpsOverHttp" id="apidoc.element.tunnel-agent.httpsOverHttp">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttp
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpsOverHttp(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = http.request
+  agent.createSocket = createSecureSocket
+  agent.defaultPort = 443
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpsOverHttps" id="apidoc.element.tunnel-agent.httpsOverHttps">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttps
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpsOverHttps(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = https.request
+  agent.createSocket = createSecureSocket
+  agent.defaultPort = 443
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent.debug" id="apidoc.module.tunnel-agent.debug">module tunnel-agent.debug</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.debug.debug" id="apidoc.element.tunnel-agent.debug.debug">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>debug
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent.httpOverHttp" id="apidoc.module.tunnel-agent.httpOverHttp">module tunnel-agent.httpOverHttp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpOverHttp.httpOverHttp" id="apidoc.element.tunnel-agent.httpOverHttp.httpOverHttp">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttp
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpOverHttp(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = http.request
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent.httpOverHttps" id="apidoc.module.tunnel-agent.httpOverHttps">module tunnel-agent.httpOverHttps</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpOverHttps.httpOverHttps" id="apidoc.element.tunnel-agent.httpOverHttps.httpOverHttps">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpOverHttps
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpOverHttps(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = https.request
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent.httpsOverHttp" id="apidoc.module.tunnel-agent.httpsOverHttp">module tunnel-agent.httpsOverHttp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpsOverHttp.httpsOverHttp" id="apidoc.element.tunnel-agent.httpsOverHttp.httpsOverHttp">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttp
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpsOverHttp(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = http.request
+  agent.createSocket = createSecureSocket
+  agent.defaultPort = 443
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tunnel-agent.httpsOverHttps" id="apidoc.module.tunnel-agent.httpsOverHttps">module tunnel-agent.httpsOverHttps</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tunnel-agent.httpsOverHttps.httpsOverHttps" id="apidoc.element.tunnel-agent.httpsOverHttps.httpsOverHttps">
+        function <span class="apidocSignatureSpan">tunnel-agent.</span>httpsOverHttps
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function httpsOverHttps(options) {
+  var agent = new TunnelingAgent(options)
+  agent.request = https.request
+  agent.createSocket = createSecureSocket
+  agent.defaultPort = 443
+  return agent
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
