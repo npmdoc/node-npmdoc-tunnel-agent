@@ -1,4 +1,7 @@
-# api documentation for  [tunnel-agent (v0.6.0)](https://github.com/mikeal/tunnel-agent#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-tunnel-agent.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tunnel-agent) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tunnel-agent.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tunnel-agent)
+# npmdoc-tunnel-agent
+
+#### basic api documentation for  [tunnel-agent (v0.6.0)](https://github.com/mikeal/tunnel-agent#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-tunnel-agent.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tunnel-agent) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tunnel-agent.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tunnel-agent)
+
 #### HTTP proxy tunneling agent. Formerly part of mikeal/request, now a standalone module.
 
 [![NPM](https://nodei.co/npm/tunnel-agent.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tunnel-agent)
@@ -65,7 +68,8 @@
         "url": "git+https://github.com/mikeal/tunnel-agent.git"
     },
     "scripts": {},
-    "version": "0.6.0"
+    "version": "0.6.0",
+    "bin": {}
 }
 ```
 
